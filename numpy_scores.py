@@ -5,7 +5,9 @@ np.random.seed(42)
 
 # Generate 5x4 array with values between 50 and 100 (inclusive)
 scores = np.random.randint(50, 101, size=(5, 4))
-
+print("*" * 40)
+print("Task 1 — Generate and Inspect the Data")
+print("*" * 40)
 print("Scores Array:\n", scores)
 
 # Score of the 3rd student in the 2nd subject
@@ -19,6 +21,10 @@ print("\nAll scores of the last 2 students:\n",
 #  Scores of first 3 students in subjects 2 and 3 only
 print("\nScores of first 3 students in subjects 2 and 3:\n",
       scores[:3, 1:3])
+print("*" * 40)
+print("*" * 40)
+print("Task 2 — Analyze with Broadcasting")
+print("*" * 40)
 # Column-wise mean (average per subject), rounded to 2 decimals
 column_mean = np.round(scores.mean(axis=0), 2)
 print("\nColumn-wise Mean (per subject):\n", column_mean)
@@ -32,7 +38,10 @@ curved_scores = scores + curve
 curved_scores = np.clip(curved_scores, None, 100)
 
 print("\nCurved Scores (max capped at 100):\n", curved_scores)
-
+print("*" * 40)
+print("*" * 40)
+print("Task 3 — Normalize and Identify")
+print("*" * 40)
 # Row-wise max (best subject score per student)
 row_max = curved_scores.max(axis=1)
 print("\nBest Subject Score per Student:\n", row_max)
