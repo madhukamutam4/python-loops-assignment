@@ -11,16 +11,13 @@ print("*" * 40)
 print("Scores Array:\n", scores)
 
 # Score of the 3rd student in the 2nd subject
-print("\nScore of 3rd student in 2nd subject:",
-      scores[2, 1])
+print("\nScore of 3rd student in 2nd subject:", scores[2, 1])
 
 # All scores of the last 2 students
-print("\nAll scores of the last 2 students:\n",
-      scores[-2:, :])
+print("\nAll scores of the last 2 students:\n", scores[-2:, :])
 
 #  Scores of first 3 students in subjects 2 and 3 only
-print("\nScores of first 3 students in subjects 2 and 3:\n",
-      scores[:3, 1:3])
+print("\nScores of first 3 students in subjects 2 and 3:\n",scores[:3, 1:3])
 print("*" * 40)
 print("*" * 40)
 print("Task 2 — Analyze with Broadcasting")
